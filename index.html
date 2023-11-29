@@ -1,0 +1,50 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="index.js" defer></script>
+        <link rel="stylesheet" href="index.css">
+        <title>TL Digital Portfolio</title>
+    </head>
+    <body class="index">
+        <header class="primary-header">
+            <button class="mobile-nav-toggle flex" aria-controls="primary-nav" aria-expanded="false"><span class="sr-only">Menu</span></button>
+            <nav>
+                <ul id="primary-nav" class="primary-nav arrow-indicators flex">
+                    <li class="active_nav"><a href="index.html"><span class="active_nav">></span>Home</a>
+                    <li><a href="about-me.html"><span>></span>About Me</a>
+                    <li><a href="projects.html"><span>></span>Projects</a>
+                    <li><a href="resume.html"><span>></span>Resume</a>
+                    <li><a href="contact.html"><span>></span>Contact</a>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-content">
+            <div id="block-1">
+                <div id="row-1" class="index-row row">
+                    <div id="heading-column-index" class="column">
+                        <h1 class="heading ff-sans-nav">
+                                Hi,
+                            <br>My name is
+                            <br>Tyler Lindsay
+                        </h1>
+
+                        <h4 class="subtext">
+                            // computer science student
+                        </h4>
+
+                        <div class="buttons ff-sans-nav">
+                            <button onclick="window.location.href='about-me.html';"><img src="assets/icons/baseline_person_white_48dp.png"><br>about me</button>
+                            <button onclick="window.location.href='projects.html';"><img src="assets/icons/baseline_view_agenda_white_48dp.png"><br>projects</button>
+                            <button onclick="window.location.href='resume.html';"><img src="assets/icons/baseline_description_white_48dp.png"><br>resume</button>
+                            <button onclick="window.location.href='contact.html';"><img src="assets/icons/baseline_contact_phone_white_48dp.png"><br>contact</button>
+                        </div>
+                    </div>
+                    <div class="column" id="main-img">
+                        <img class="img" src="assets/images/about_me/skydiving.jpg">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

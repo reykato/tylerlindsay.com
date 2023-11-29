@@ -1,0 +1,205 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="index.js" defer></script>
+        <link rel="stylesheet" href="index.css">
+        <title>TL Digital Portfolio</title>
+    </head>
+    <body class="projects">
+        <header class="primary-header">
+            <button class="mobile-nav-toggle flex" aria-controls="primary-nav" aria-expanded="false"><span class="sr-only">Menu</span></button>
+            <nav>
+                <ul id="primary-nav" class="primary-nav arrow-indicators flex">
+                    <li><a href="index.html"><span>></span>Home</a>
+                    <li><a href="about-me.html"><span>></span>About Me</a>
+                    <li class="active_nav"><a href="projects.html"><span class="active_nav">></span>Projects</a>
+                    <li><a href="resume.html"><span>></span>Resume</a>
+                    <li><a href="contact.html"><span>></span>Contact</a>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <div>
+                <div id="block-1">
+                    <div id="heading-row" class="row">
+                        <div id="heading-column" class="column">
+                            <h1 class="heading ff-sans-nav">
+                                Projects
+                            </h1>
+                        </div>
+                    </div>
+
+                    <!-- MESSAGING SYSTEM PROJECT ROW -->
+                    <div id="row-3" class="row">
+                        <div id="slider-column-messaging" class="column">
+                            <div class="slideshow-container">
+
+                                <!-- Full-width images with number and caption text -->
+                                <div class="slides0 fade">
+                                  <div class="numbertext">1 / 4</div>
+                                  <img src="/assets/images/projects/dingus/dingus_newmessage.jpg" style="width:100%">
+                                </div>
+                              
+                                <div class="slides0 fade">
+                                  <div class="numbertext">2 / 4</div>
+                                  <img src="/assets/images/projects/dingus/dingus_newmessage.jpg" style="width:100%">
+                                </div>
+        
+                                <div class="slides0 fade">
+                                    <div class="numbertext">3 / 4</div>
+                                    <img src="/assets/images/projects/dingus/dingus_message.jpg" style="width:100%">
+                                  </div>
+                                
+                                  <div class="slides0 fade">
+                                    <div class="numbertext">4 / 4</div>
+                                    <img src="/assets/images/projects/dingus/dingus_back.jpg" style="width:100%">
+                                  </div>
+                              
+                                <!-- Next and previous buttons -->
+                                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                            </div>
+                            <br>
+                        </div>
+                        <div id="column-messaging" class="column column-hobbies">
+                            <h1 id="heading-messaging" class="heading ff-sans-nav">
+                                <i>The Dingus</i> Messaging System
+                            </h1>
+
+                            <p class="description">
+                                In late September 2022, I had an idea for the ultimate Christmas gift to my partner - a messaging system between us which
+                                allows us to leave each other short notes for when we get back home. After about 40 hours of learning, coding,
+                                troubleshooting, soldering, and updating, I have created its most current version. (Yes, it was worth it.) Hosted on a remote webserver,
+                                the secure web client provides a text box and buttons to submit messages and photos (photo display functionality not yet finished).
+                                Once one of the buttons are pressed, the text in the box is saved to a file using PHP, and a list file is updated with its
+                                filename.
+                                <br>
+                                <br>The message receiver (codenamed The Dingus) is a Lilygo T-Display-S3 microcontroller using the ESP32-S3 SoC. Using periodic
+                                HTTP file get requests, the dingus can grab the list of filenames from the server and determine which messages are new. If a
+                                new message is found, the user can use the built-in buttons (soldered to device with perfboard) to display and navigate the
+                                new messages and previous messages.
+                            </p>
+                        </div>
+                    </div>
+
+                    
+
+                    <!-- WEBSITE PROJECT ROW -->
+                    <div id="row-4" class="row">
+                        <div id="column-portfolio" class="column column-hobbies">
+                            <h1 id="heading-portfolio" class="heading ff-sans-nav">
+                                Digital Portfolio
+                            </h1>
+
+                            <p class="description">
+                                As a student in university, I meet new people very often. To help learn more about me and get to know me in further
+                                detail, I built my own digital portfolio. The computer-science-student part of me decided it would be built from scratch,
+                                resulting in many nightmares about CSS and front-end design. I am proud of learning enough to make
+                                this portfolio usable! Through updating this site, I continually find better ways to code websites and create more
+                                friendly layouts.
+
+                                This site is hosted using HostGator and runs Apache with cPanel for server management. 
+                            </p>
+
+                        </div>
+
+                        <div id="slider-column-portfolio" class="column">
+                            <div class="slideshow-container">
+
+                                <!-- Full-width images with number and caption text -->
+                                <div class="slides1 fade">
+                                  <div class="numbertext">1 / 4</div>
+                                  <img src="/assets/images/projects/website/website_frontpage.png" style="width:100%">
+                                </div>
+                              
+                                <div class="slides1 fade">
+                                  <div class="numbertext">2 / 4</div>
+                                  <img src="/assets/images/about_me/" style="width:100%">
+                                </div>
+        
+                                <div class="slides1 fade">
+                                    <div class="numbertext">3 / 4</div>
+                                    <img src="/assets/images/about_me/" style="width:100%">
+                                  </div>
+                                
+                                  <div class="slides1 fade">
+                                    <div class="numbertext">4 / 4</div>
+                                    <img src="/assets/images/about_me/" style="width:100%">
+                                  </div>
+                              
+                                <!-- Next and previous buttons -->
+                                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                            </div>
+                            <br>
+                        </div>
+                        
+                    </div>
+
+                    <!-- AVATAR PROJECT ROW -->
+                    <div id="row-5" class="row">
+                        <div id="slider-column-portfolio" class="column">
+                            <div class="slideshow-container">
+
+                                <!-- Full-width images with number and caption text -->
+                                <div class="slides2 fade">
+                                  <div class="numbertext">1 / 4</div>
+                                  <img src="/assets/images/projects/avatar/avatar3.jpg" style="width:100%">
+                                </div>
+                              
+                                <div class="slides2 fade">
+                                  <div class="numbertext">2 / 4</div>
+                                  <img src="/assets/images/projects/avatar/avatar4.jpg" style="width:100%">
+                                </div>
+        
+                                <div class="slides2 fade">
+                                    <div class="numbertext">3 / 4</div>
+                                    <img src="/assets/images/projects/avatar/avatar1.jpg" style="width:100%">
+                                  </div>
+                                
+                                  <div class="slides2 fade">
+                                    <div class="numbertext">4 / 4</div>
+                                    <img src="/assets/images/projects/avatar/avatar2.jpg" style="width:100%">
+                                  </div>
+                              
+                                <!-- Next and previous buttons -->
+                                <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                            </div>
+                            <br>
+                        </div>
+
+                        <div id="column-avatar" class="column column-hobbies">
+                            <h1 id="heading-avatar" class="heading ff-sans-nav">
+                                3D Avatar Design
+                            </h1>
+
+                            <p class="description">
+                                During the height of the COVID pandemic, I had a lot of free time to spend around the house. One thing I enjoyed doing 
+                                was socializing and interacting with others in a game called VRChat. Many users in the game have custom avatars - ones 
+                                that reflect how they want to look, also offering an artistic outlet for self-expression. I did the only logical thing, which 
+                                was to spend weeks learning to use Unity and upload avatars using the VRChat SDK.
+                                <br>
+                                <br>Using a model called the "Rexouium" made by a 3D artist by the name of Rezillo Ryker, I had a blank slate to work with. Adobe Substance 3D 
+                                was my software of choice for painting the model and learning all about Physically Based Rendering (PBR) textures. Opening Unity, 
+                                there were still many more things I needed to learn about: shaders, visemes, blendshapes, and more - just to modify the model and 
+                                put my custom textures on. After doing so, I also wanted to add finishing touches: animating some shader options and implementing an in-game menu for 
+                                the ability to change the color of my avatar while playing. This project took me about 25 hours total, and I am currently working on a new one!
+                                <br>
+                                <br>Here's a showcase video which I made as part of a class in my sophomore year: 
+                            </p>
+                            <a class="description" href="https://youtu.be/1vySs4QJrMo">click me!</a>
+                        </div>
+                    </div>
+
+                    <!-- START ENDING ROW -->
+                    <div id="row-6" class="row">
+                        <p class="description">I have worked on many more projects than the ones listed here. <a href="contact.html">Contact me</a> for more info on my projects!</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

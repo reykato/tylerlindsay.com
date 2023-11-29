@@ -1,0 +1,95 @@
+html {
+  font-family: Arial;
+  color: white;
+}
+
+body {
+  background-color: rgb(35, 35, 35);
+  
+}
+
+textarea {
+  background-color: rgb(10, 10, 10);
+  color: white;
+  resize: none;
+  overflow: auto;
+  outline: none;
+  border: 2px solid white; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+div.upload-wrapper {
+  color: white;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  width: 265px;
+}
+
+input[type="file"] {
+  position: absolute;
+  left: -9999px;
+}
+
+button {
+  padding: 0.7rem;
+  color: white;
+  display: block;
+  background: #464646;
+  cursor: pointer;
+  border: 3px solid #464646;
+  border-radius: 5px 5px 5px 5px;
+  margin: 0 auto;
+}
+
+button:hover {
+  background: #363636;
+  border: 3px solid #363636;
+}
+
+input {
+  padding: 0.7rem;
+  color: white;
+  display: block;
+  background: #464646;
+  cursor: pointer;
+  border: 3px solid #464646;
+  border-radius: 5px 5px 5px 5px;
+  margin: 0 auto;
+}
+
+input:hover {
+  background: #363636;
+  border: 3px solid #363636;
+}
+
+label[for="file-upload"] {
+  padding: 0.7rem;
+  
+  display: inline-block;
+  background: #464646;
+  cursor: pointer;
+  border: 3px solid #464646;
+  border-radius: 0 5px 5px 0;
+  border-left: 0;
+}
+label[for="file-upload"]:hover {
+  background: #363636;
+  border: 3px solid #363636;
+}
+
+span.file-name {
+  padding: 0.7rem 3rem 0.7rem 0.7rem;
+  white-space: nowrap;
+  overflow: hidden;
+  background: #919191;
+  color: black;
+  border: 3px solid #919191;
+  border-radius: 5px 0 0 5px;
+  border-right: 0;
+}

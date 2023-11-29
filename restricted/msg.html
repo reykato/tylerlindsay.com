@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>send pics uwu</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form action="save-to-log-tyler.php" method="POST">
+      <textarea wrap="off" cols="40" rows="10" name="message" ></textarea>
+      <button type="submit" id="submit">Send to Tyler</button><button type="submit" id="submit" formaction="save-to-log-aidan.php">Send to Aidan </button>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+
+      <div class="upload-wrapper">
+        <span class="file-name">Choose a file...</span>
+        <label for="file-upload">Browse<input type="file" id="file-upload" name="the_file"></label>
+      </div>
+      <br>
+      <input type="submit" value="Upload" name="submit">
+    </form>
+    
+  </body>
+</html>
