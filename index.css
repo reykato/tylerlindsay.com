@@ -165,7 +165,7 @@ input, button, textarea, select {
 }
 
 /* Hide the images by default */
-.slides1, .slides2, .slides3, .slides4 {
+.slides0, .slides1, .slides2 {
   display: none;
 }
 
