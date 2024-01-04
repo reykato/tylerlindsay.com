@@ -277,6 +277,13 @@ body {
     font-family: var(--ff-sans-normal);
 }
 
+.divider-line {
+    text-align: center;
+    width: 85%;
+    margin: auto;
+    border-top: 1px solid #949494;
+}
+
 .heading {
     white-space: wrap;
     font-size: clamp(2rem, 6vw, 5rem);
