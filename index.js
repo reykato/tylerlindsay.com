@@ -1,3 +1,6 @@
+// number of slides to initialize values for
+let maxSlides = 6;
+
 const nav = document.querySelector(".primary-nav");
 const navToggle = document.querySelector(".mobile-nav-toggle");
 
@@ -13,10 +16,11 @@ navToggle.addEventListener("click", () => {
     }
 })
 
-// slideshow test
-let slideIndex = [1,1,1];
-
-let slideId = ["slides0", "slides1", "slides2"]
+let i;
+let slideIndex = [];
+for (i = 0; i < maxSlides; i++) {
+    slideIndex.push(1);
+}
 
 function plusSlides(n, no) {
     showSlides(slideIndex[no] += n, no);
@@ -28,7 +32,8 @@ function currentSlide(n, no) {
 
 function showSlides(n, no) {
     let i;
-    let x = document.getElementsByClassName(slideId[no]);
+    // each slide is named "slide" followed by the index of that slideshow instance, e.g. all slides in the first slideshow will have class "slides0"
+    let x = document.getElementsByClassName("slides" + no.toString());
     if (n > x.length) {slideIndex[no] = 1}
     if (n < 1) {slideIndex[no] = x.length}
     for (i = 0; i < x.length; i++) {
@@ -38,9 +43,10 @@ function showSlides(n, no) {
 } 
 
 function onLoad() {
-    showSlides(1, 0);
-    showSlides(1, 1);
-    showSlides(1, 2);
+    let i;
+    for (i = 0; i < maxSlides; i++) {
+        showSlides(1, i); 
+    }
 }
 
 document.onload = onLoad();

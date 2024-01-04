@@ -394,12 +394,14 @@ body {
     filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.24))
 }
 
-.projects main h2 {
-    color: purple;
-}
-
 .contact main h2 {
     color: aqua;
+}
+
+.project-date {
+    font-weight: 500;
+    color: #4a883d;
+    font-size: 20px;
 }
 
 li {
