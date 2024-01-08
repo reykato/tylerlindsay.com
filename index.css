@@ -299,10 +299,10 @@ body {
     /* font-family: var(--ff-sans-nav); */
 }
 
-.row a {
+/* .row a {
     color: white;
     font-weight: 500;
-}
+} */
 
 .divider {
     margin: 5rem 0;
@@ -335,7 +335,6 @@ body {
     font-size: 1.5rem;
     color: white;
 }
-
 
 .subtext {
     color: #4a883d;
@@ -405,11 +404,7 @@ body {
     color: aqua;
 }
 
-.project-date {
-    font-weight: 500;
-    color: #4a883d;
-    font-size: 20px;
-}
+
 
 li {
     white-space: nowrap;
@@ -620,6 +615,13 @@ stupid but u r almost done peeing and i am running out of time. bites you bites 
         padding-inline: clamp(3rem, 7vw, 7rem);
         margin-block: 2rem;
    }
+}
+
+.project-secondary-info {
+    font-weight: 500;
+    color: #4a883d;
+    font-size: 20px;
+    /* text-decoration: none; */
 }
 
 /* for medium-sized screens */
